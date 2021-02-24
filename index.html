@@ -4,45 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    
-    <script src="calculationFunctions.js" defer></script>
-
-
-  <!--  <script src="printtitlescript.js" defer></script>
-        <script src="changefontofoysterelement.js" defer></script>
-        <script src="helloworldscript.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/calculationFunctions.js" defer></script>
+<!--<script src="printtitlescript.js" defer></script>
+    <script src="changefontofoysterelement.js" defer></script>
+    <script src="helloworldscript.js"></script>
 -->
-
-
-    <title>Document</title>
-
 </head>
-<body>
-
-        <h1>
-            Hello world
-        </h1>
-
-        <article>
-            <h3>the world is an oyster</h3>
-            <p id="eatingtheoyster">you've got to eat the oyster</p>
-            <p>there is no oyster</p>
-            <p>before the oyster eats you</p>
-
-        </article>
-        
-
-        <article>
-            <h3>this is a calculator</h3>
-            <input id="number1" type="number">
-            <input id="number2" type="number">
-            <input type="submit" onclick="plusbuttonaction()" value="+">
-            <p id="result"></p>
-
-        </article>
-        
-        
-</body>
+    <body>
+        <main>
+            <div class="jumbotron text-center ">
+                <h1 class="display-3">Calculator</h1>
+                <p class="lead">Basic javascript calculations based on the lessons of Bart (23/02/2021)</p>
+            </div>
+            <div class="container d-flex flex-column">
+                <div class="p-2">
+                    <article>
+                        <h3>Simple Calculator</h3>
+                        <input id="number1" type="number" placeholder="First number">
+                        <input id="number2" type="number" placeholder="Second number">
+                        <input type="button" class="btn btn-primary" onclick="getSumAction()" value="+">
+                        <input type="submit" class="btn btn-primary" onclick="getDifferenceAction()" value="-">
+                        <input type="submit" class="btn btn-primary" onclick="getMultiplicationAction()" value="*">
+                        <input type="submit" class="btn btn-primary" onclick="getDivisionAction()" value="/">
+                        <p>
+                            Result: <span id="result"></span>
+                        </p>
+                    </article>    
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
